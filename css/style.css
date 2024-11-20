@@ -1,20 +1,139 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
 
+/* landing page */
+
+.navbar-brand {
+ color: #1EC6B5;
+}
+
+.nav-link {
+  color: #1EC6B5;
+}
+
+.nav-font {
+  font-family: cinzel decorative, sans-serif;
+}
+
 body {
-    background-color: rgb(95, 100, 102);
+  background-color: #c6c2c2;
 }
+
 .c-hero {
-filter: brightness(60%);
-object-fit: cover;
-width: 100%;
+  filter: brightness(60%);
 }
-.c-item {
-  height: 900px;
+
+/* landing page */
+
+/* attractions */
+
+.carousel {
   max-width: 100%;
+  margin: auto;
 }
-.c-img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .heading {
+    color: white;
+    font-size: 96px;
+    text-shadow: 0 0 2px black;
+    margin-bottom: 8px;
+  }
+  
+  .sub-heading {
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 0 2px black;
+  }
+  
+  .button-container {
+    margin-top: 64px;
+  }
+  
+  .button {
+    background: #1EC6B5;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 24px;
+    border-radius: 2px;
+  }
+
+  /* attractions */
+  
+
+  
+  
+   /* gpt.css */
+
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #bdbddf;
+    margin: 0;
+    padding: 0;
 }
+.quiz-container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgb(182, 133, 133);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+}
+.question {
+    font-size: 18px;
+    margin: 20px 0;
+}
+.answers {
+    list-style: none;
+    padding: 0;
+}
+.answers li {
+    margin: 10px 0;
+}
+.answers input {
+    margin-right: 10px;
+}
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4361a3;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.submit-btn:hover {
+    background-color: #45a049;
+}
+.result {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+  
+ 
+    

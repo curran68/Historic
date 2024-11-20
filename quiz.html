@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .quiz-container {
+            width: 60%;
+            margin: 50px auto;
+            background-color: rgb(230, 201, 201);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .answers {
+            list-style: none;
+            padding: 0;
+        }
+        .answers li {
+            margin: 10px 0;
+        }
+        .answers input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body id="gpt">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-font">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="map.html">Map</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="attractions.html">Attractions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="form.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="quiz.html">Quiz</a>
+                </li>
+              </ul>
+            </div>
+    </nav>
+    <header>
+        <!-- Jumbotron -->
+        <div class="p-5 text-center bg-body-tertiary">
+          <h1 class="mb-3">Heading</h1>
+          <h4 class="mb-3">Subheading</h4>
+        </div>
+        <!-- Jumbotron -->
+      </header>
+      
+
+    <div class="quiz-container">
+        <h1>Facts About Historic York</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <ul class="answers">
+                    <li><input type="radio" name="q1" value="A"> A) Paris</li>
+                    <li><input type="radio" name="q1" value="B"> B) London</li>
+                    <li><input type="radio" name="q1" value="C"> C) Rome</li>
+                    <li><input type="radio" name="q1" value="D"> D) Berlin</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>2. What is the largest planet in our solar system?</p>
+                <ul class="answers">
+                    <li><input type="radio" name="q2" value="A"> A) Earth</li>
+                    <li><input type="radio" name="q2" value="B"> B) Jupiter</li>
+                    <li><input type="radio" name="q2" value="C"> C) Saturn</li>
+                    <li><input type="radio" name="q2" value="D"> D) Mars</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>3. Who developed the theory of relativity?</p>
+                <ul class="answers">
+                    <li><input type="radio" name="q3" value="A"> A) Isaac Newton</li>
+                    <li><input type="radio" name="q3" value="B"> B) Albert Einstein</li>
+                    <li><input type="radio" name="q3" value="C"> C) Nikola Tesla</li>
+                    <li><input type="radio" name="q3" value="D"> D) Galileo Galilei</li>
+                </ul>
+            </div>
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+
+        <div class="result" id="result">
+            <h2>Your Score: <span id="score"></span>/3</h2>
+        </div>
+    </div>
+    <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a data class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a data class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a data class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a data class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a data class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a data class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="#!"
+              role="button"
+              ><i class="fa-brands fa-github"></i></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-body" href="#">mc-mp-2.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+      
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const answers = {
+                q1: 'A', // Correct answer for question 1
+                q2: 'B', // Correct answer for question 2
+                q3: 'B', // Correct answer for question 3
+            };
+
+            // Check answers
+            for (let question in answers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            // Show the result
+            document.getElementById("score").textContent = score;
+            document.getElementById("result").style.display = 'block';
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/d76c2e330f.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Quiz</title>
+
+    <!--quiz css-->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,15 +18,25 @@
             margin: 0;
             padding: 0;
         }
+        .nav-font {
+          font-family: cinzel decorative, sans-serif;
+        }
+        .navbar-brand {
+          color: #1EC6B5;
+        } 
+
+        .nav-link {
+          color: #1EC6B5;
+        }
         .mb-3 {
-          padding-top: 20px;
+          padding-top: 30px;
         }
         .quiz-container {
             width: 60%;
             margin: 50px auto;
             background-color: rgb(230, 201, 201);
             border-radius: 8px;
-            padding: 20px;
+            padding: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
@@ -48,9 +60,9 @@
             display: block;
             width: 100%;
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #1EC685;
             color: white;
-            border: none;
+            border: 2px;
             font-size: 16px;
             cursor: pointer;
             border-radius: 4px;
@@ -64,8 +76,10 @@
             margin-top: 20px;
         }
     </style>
+    <!--quiz css-->
 </head>
-<body id="gpt">
+<body id="Quiz">
+    <!--nav-bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-font">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Home</a>
@@ -89,16 +103,19 @@
               </ul>
             </div>
     </nav>
+    <!--nav-bar-->
     <br>
+    <!--header-->
     <header>
-        <!-- Jumbotron -->
+      <!-- Jumbotron -->
         <div class="p-5 text-center bg-body-tertiary header-1">
           <h1 class="mb-3">Short Quiz Covering Facts About Historic York</h1>
         </div>
-        <!-- Jumbotron -->
-      </header>
+      <!-- Jumbotron -->
+    </header>
+    <!--header-->
       
-
+    <!--quiz body-->
     <div class="quiz-container">
         <h1>Facts About Historic York</h1>
         <form id="quizForm">
@@ -126,24 +143,6 @@
                     <li><input type="radio" name="q3" value="C"> C) C</li>
                 </ul>
             </div>
-            <div class="question">
-              <p>4. To Follow?</p>
-              <ul class="answers">
-                  <li><input type="radio" name="q3" value="A"> A) A</li>
-                  <li><input type="radio" name="q3" value="B"> B) B</li>
-                  <li><input type="radio" name="q3" value="C"> C) C</li>
-              </ul>
-          </div>
-          <div class="question">
-            <p>5. To follow?</p>
-            <ul class="answers">
-                <li><input type="radio" name="q3" value="A"> A) A</li>
-                <li><input type="radio" name="q3" value="B"> B) B</li>
-                <li><input type="radio" name="q3" value="C"> C) C</li>
-            </ul>
-        </div>
-
-
             <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
         </form>
 
@@ -151,6 +150,8 @@
             <h2>Your Score: <span id="score"></span>/3</h2>
         </div>
     </div>
+    <!--quiz body-->
+    <!--footer-->
     <footer class="bg-body-tertiary text-center">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
@@ -213,7 +214,7 @@
         </div>
         <!-- Copyright -->
     </footer>
-      
+    <!--footer-->  
     <script>
         function submitQuiz() {
             let score = 0;

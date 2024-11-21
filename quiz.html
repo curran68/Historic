@@ -16,6 +16,9 @@
             margin: 0;
             padding: 0;
         }
+        .mb-3 {
+          padding-top: 20px;
+        }
         .quiz-container {
             width: 60%;
             margin: 50px auto;
@@ -53,7 +56,7 @@
             border-radius: 4px;
         }
         .submit-btn:hover {
-            background-color: #45a049;
+            background-color: #1EC6B5;
         }
         .result {
             display: none;
@@ -86,11 +89,11 @@
               </ul>
             </div>
     </nav>
+    <br>
     <header>
         <!-- Jumbotron -->
-        <div class="p-5 text-center bg-body-tertiary">
-          <h1 class="mb-3">Heading</h1>
-          <h4 class="mb-3">Subheading</h4>
+        <div class="p-5 text-center bg-body-tertiary header-1">
+          <h1 class="mb-3">Short Quiz Covering Facts About Historic York</h1>
         </div>
         <!-- Jumbotron -->
       </header>
@@ -100,32 +103,47 @@
         <h1>Facts About Historic York</h1>
         <form id="quizForm">
             <div class="question">
-                <p>1. What is the capital of France?</p>
+                <p>1. What year did the York minster suffer a lightning bolt.?</p>
                 <ul class="answers">
-                    <li><input type="radio" name="q1" value="A"> A) Paris</li>
-                    <li><input type="radio" name="q1" value="B"> B) London</li>
-                    <li><input type="radio" name="q1" value="C"> C) Rome</li>
-                    <li><input type="radio" name="q1" value="D"> D) Berlin</li>
+                    <li><input type="radio" name="q1" value="A"> A) 1986</li>
+                    <li><input type="radio" name="q1" value="B"> B) 1984</li>
+                    <li><input type="radio" name="q1" value="C"> C) 1982</li>
                 </ul>
             </div>
             <div class="question">
-                <p>2. What is the largest planet in our solar system?</p>
+                <p>2. To Follow?</p>
                 <ul class="answers">
-                    <li><input type="radio" name="q2" value="A"> A) Earth</li>
-                    <li><input type="radio" name="q2" value="B"> B) Jupiter</li>
-                    <li><input type="radio" name="q2" value="C"> C) Saturn</li>
-                    <li><input type="radio" name="q2" value="D"> D) Mars</li>
+                    <li><input type="radio" name="q2" value="A"> A) A</li>
+                    <li><input type="radio" name="q2" value="B"> B) B</li>
+                    <li><input type="radio" name="q2" value="C"> C) C</li>
                 </ul>
             </div>
             <div class="question">
-                <p>3. Who developed the theory of relativity?</p>
+                <p>3. To Follow?</p>
                 <ul class="answers">
-                    <li><input type="radio" name="q3" value="A"> A) Isaac Newton</li>
-                    <li><input type="radio" name="q3" value="B"> B) Albert Einstein</li>
-                    <li><input type="radio" name="q3" value="C"> C) Nikola Tesla</li>
-                    <li><input type="radio" name="q3" value="D"> D) Galileo Galilei</li>
+                    <li><input type="radio" name="q3" value="A"> A) A</li>
+                    <li><input type="radio" name="q3" value="B"> B) B</li>
+                    <li><input type="radio" name="q3" value="C"> C) C</li>
                 </ul>
             </div>
+            <div class="question">
+              <p>4. To Follow?</p>
+              <ul class="answers">
+                  <li><input type="radio" name="q3" value="A"> A) A</li>
+                  <li><input type="radio" name="q3" value="B"> B) B</li>
+                  <li><input type="radio" name="q3" value="C"> C) C</li>
+              </ul>
+          </div>
+          <div class="question">
+            <p>5. To follow?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q3" value="A"> A) A</li>
+                <li><input type="radio" name="q3" value="B"> B) B</li>
+                <li><input type="radio" name="q3" value="C"> C) C</li>
+            </ul>
+        </div>
+
+
             <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
         </form>
 
@@ -200,7 +218,7 @@
         function submitQuiz() {
             let score = 0;
             const answers = {
-                q1: 'A', // Correct answer for question 1
+                q1: 'B', // Correct answer for question 1
                 q2: 'B', // Correct answer for question 2
                 q3: 'B', // Correct answer for question 3
             };

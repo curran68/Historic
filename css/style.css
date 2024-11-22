@@ -24,11 +24,12 @@
 }
 
 body {
-  background-color: #c6c2c2;
+  background-color: #b5b5b5;
 }
 
 .c-hero {
   filter: brightness(60%);
+  
 }
 
 /* landing page */
@@ -90,11 +91,11 @@ body {
   
    /* quiz.css */
 
-   body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
+body {
+font-family: Arial, sans-serif;
+background-color: lightgrey;
+margin: 0;
+padding: 0;
 }
 .nav-font {
   font-family: cinzel decorative, sans-serif;
@@ -163,33 +164,11 @@ h1 {
 
 body {
   margin: 0;
-  background-color: #ffffff;
-}
-
-.nav-font {
-  font-family: cinzel decorative, sans-serif;
-}
-.navbar-brand {
-  color: #1EC6B5;
-} 
-
-.nav-link {
-  color: #1EC6B5;
-}
-.btn-primary{
-  color: #0e0909;
-  padding-top: 7px;
-}
-#map-container {
-  position: relative;
-  height: 180px;
-  width: 600px;
 }
 
 #map {
-  position: relative;
-  height: inherit;
-  width: inherit;
+  height: 80vh;
+  width: 100vw;
 }
 
 /* map.css */

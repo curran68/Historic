@@ -93,7 +93,7 @@ body {
 
 body {
 font-family: Arial, sans-serif;
-background-color: lightgrey;
+background-color: #f8f9FA;
 margin: 0;
 padding: 0;
 }
@@ -165,12 +165,17 @@ h1 {
 body {
   margin: 0;
 }
-
+.info-bar {
+  background-color: #f8f9FA;
+}
 #map {
   height: 80vh;
   width: 100vw;
 }
-
+h3, p {
+  padding-top: 5px;
+  color: #4e1ec6;
+}
 /* map.css */
 
   

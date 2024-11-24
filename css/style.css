@@ -3,11 +3,9 @@
 
 
 /* landing page */
-
 .navbar-brand {
  color: #1EC6B5;
 }
-
 .nav-link {
   color: #1EC6B5;
 }
@@ -22,75 +20,32 @@
 .nav-font {
   font-family: cinzel decorative, sans-serif;
 }
-
 body {
   background-color: #b5b5b5;
 }
-
 .c-hero {
-  filter: brightness(60%);
-  
+  filter: brightness(60%);  
 }
-
 /* landing page */
 
 /* attractions */
-
+.c-item {
+  color: white;
+}
 .carousel {
   max-width: 100%;
   margin: auto;
 }
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+.txt-1 {
+  color: white;
+}
+/* attractions */  
   
-  .img-fluid {
-    width: 100%;
-    height: auto;
-  }
-  
-  .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .heading {
-    color: white;
-    font-size: 96px;
-    text-shadow: 0 0 2px black;
-    margin-bottom: 8px;
-  }
-  
-  .sub-heading {
-    color: white;
-    font-size: 40px;
-    text-shadow: 0 0 2px black;
-  }
-  
-  .button-container {
-    margin-top: 64px;
-  }
-  
-  .button {
-    background: #1EC6B5;
-    border: none;
-    color: white;
-    padding: 8px 16px;
-    font-size: 24px;
-    border-radius: 2px;
-  }
-
-  /* attractions */
-  
-
-  
-  
-   /* quiz.css */
-
+/* quiz.css */
 body {
 font-family: Arial, sans-serif;
 background-color: #f8f9FA;
@@ -103,7 +58,6 @@ padding: 0;
 .navbar-brand {
   color: #1EC6B5;
 } 
-
 .nav-link {
   color: #1EC6B5;
 }
@@ -114,12 +68,12 @@ padding: 0;
   padding-top: 30px;
 }
 .quiz-container {
-    width: 60%;
-    margin: 50px auto;
-    background-color: rgb(230, 201, 201);
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 50px auto;
+  background-color: rgb(230, 201, 201);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 h1 {
     text-align: center;
@@ -157,22 +111,19 @@ h1 {
     text-align: center;
     margin-top: 20px;
 }
-
 /* quiz.css */
 
 /* map.css */
-
 body {
   margin: 0;
 }
-.info-bar {
-  background-color: #f8f9FA;
-}
+
 #map {
   height: 80vh;
   width: 100vw;
 }
-h3, p {
+.info-bar {
+  background-color: #f8f9FA;
   padding-top: 5px;
   color: #4e1ec6;
 }

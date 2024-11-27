@@ -4,78 +4,75 @@
 
 /* landing page */
 .navbar-brand {
- color: #1EC6B5;
+    color: #1EC6B5;
 }
 .nav-link {
-  color: #1EC6B5;
+    color: #1EC6B5;
 }
 .logo-image {
-  width: auto;
-  height: auto;
-  border-radius: 50%;
-  overflow: hidden;
-  padding-top: 0%;
-  padding-left: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    padding-top: 0%;
+    padding-left: 20px;
 }
 .nav-font {
-  font-family: cinzel decorative, sans-serif;
+    font-family: cinzel decorative, sans-serif;
 }
 body {
-  background-color: #b5b5b5;
+    background-color: #b5b5b5;
 }
 .c-hero {
-  filter: brightness(60%);  
+    filter: brightness(60%);
+}
+.card-text {
+    font-size: small;
+}
+.txt-box {
+    color: #1EC6B5;
+    background-color: rgb(11, 9, 9);
 }
 /* landing page */
 
 /* attractions */
-.c-item {
-  height: 820px;
-  color: white;
-}
-.c-img {
-  height: 100vh;
-  object-fit: cover;
-}
-.container {
-  max-width: 100%;
-  margin: 0;
+
+.d-block w-100 {
+  width: 100%;
+  height: 50vh;
 }
 
-.txt-1 {
-  color: white;
-}
-/* attractions */  
-  
+/* attractions */
+
 /* quiz.css */
 body {
-font-family: Arial, sans-serif;
-background-color: #f8f9FA;
-margin: 0;
-padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9FA;
+    margin: 0;
+    padding: 0;
 }
 .nav-font {
-  font-family: cinzel decorative, sans-serif;
+    font-family: cinzel decorative, sans-serif;
 }
 .navbar-brand {
-  color: #1EC6B5;
-} 
+    color: #1EC6B5;
+}
 .nav-link {
-  color: #1EC6B5;
+    color: #1EC6B5;
 }
 .header-1 {
-  background-color: aquamarine;
+    background-color: aquamarine;
 }
 .mb-3 {
-  padding-top: 30px;
+    padding-top: 30px;
 }
 .quiz-container {
-  width: 60%;
-  margin: 50px auto;
-  background-color: rgb(230, 201, 201);
-  border-radius: 8px;
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 50px auto;
+    background-color: rgb(230, 201, 201);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 h1 {
     text-align: center;
@@ -117,20 +114,20 @@ h1 {
 
 /* map.css */
 body {
-  margin: 0;
+    margin: 0;
 }
 
 #map {
-  height: 80vh;
-  width: 100vw;
+    height: 80vh;
+    width: 100vw;
 }
 .info-bar {
-  background-color: #f8f9FA;
-  padding-top: 5px;
-  color: #4e1ec6;
+    background-color: #f8f9FA;
+    padding-top: 5px;
+    color: #4e1ec6;
 }
 /* map.css */
 
-  
- 
-    
+
+
+

@@ -20,7 +20,7 @@
 .nav-font {
     font-family: cinzel decorative, sans-serif;
 }
-body {
+#index {
     background-color: #b5b5b5;
 }
 .c-hero {
@@ -30,6 +30,8 @@ body {
     font-size: small;
 }
 .txt-box {
+    font-family: cinzel decorative, sans-serif;
+    padding-top: 5px;
     color: #1EC6B5;
     background-color: rgb(11, 9, 9);
 }
@@ -45,14 +47,13 @@ body {
 /* attractions */
 
 /* quiz.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9FA;
+#body {
+    font-family: tahoma, sans-serif;
     margin: 0;
     padding: 0;
 }
-.bg-img {
-    background-image: url("images/minstersketch.jpg");
+#bg-img {
+    background-image: url("../images/mapold.jpg");
 }
 .nav-font {
     font-family: cinzel decorative, sans-serif;
@@ -63,23 +64,22 @@ body {
 .nav-link {
     color: #1EC6B5;
 }
-.header-1 {
-    background-color: aquamarine;
+h1 {
+    text-align: center;
 }
 .mb-3 {
-    padding-top: 30px;
+    padding-top: 40px;
     font-family: cinzel decorative, sans-serif;
+    font-weight: 500;
+    background-color: #1EC6B5;
 }
 .quiz-container {
     width: 60%;
     margin: 50px auto;
-    background-color: rgb(230, 201, 201);
+    background-color: lightgray;
     border-radius: 8px;
     padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-h1 {
-    text-align: center;
 }
 .question {
     font-size: 18px;
@@ -100,14 +100,14 @@ h1 {
     width: 100%;
     padding: 10px;
     background-color: black;
-    color: white;
+    color: #1EC6B5;
     border: 2px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
 }
 .submit-btn:hover {
-    background-color: #1EC6B5;
+    background-color: white;
 }
 .result {
     display: none;
@@ -126,9 +126,10 @@ body {
     width: 100vw;
 }
 .info-bar {
-    background-color: #f8f9FA;
+    font-family: cinzel decorative, sans-serif;
+    background-color: #1EC6B5;
     padding-top: 5px;
-    color: #4e1ec6;
+    color: black;
 }
 /* map.css */
 

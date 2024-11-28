@@ -15,7 +15,7 @@
     <title>Quiz</title>
 </head>
 
-<body id="quiz">
+<body id="bg-img">
     <!--nav-bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-font">
         <div class="container-fluid">
@@ -44,50 +44,46 @@
     <!--nav-bar-->
     <br>
     <!--header-->
-    <header>
-        <!-- Jumbotron -->
-        <div class="p-5 text-center bg-body-tertiary header-1">
-            <h1 class="mb-3">Short Quiz Covering Facts About Historic York</h1>
+    <header>  
+        <div class="mb-3">
+            <h1>quiz about some facts of york </h1>
         </div>
-        <!-- Jumbotron -->
     </header>
     <!--header-->
-
     <!--quiz body-->
-    <div class="quiz-container bg-img">
-        <h1>Facts About Historic York</h1>
-        <form id="quizForm">
-            <div class="question">
-                <p>1. What year did the York minster suffer a lightning bolt.?</p>
-                <ul class="answers">
-                    <li><input type="radio" name="q1" value="A"> A) 1986</li>
-                    <li><input type="radio" name="q1" value="B"> B) 1984</li>
-                    <li><input type="radio" name="q1" value="C"> C) 1982</li>
-                </ul>
-            </div>
-            <div class="question">
-                <p>2. Which year was Margaret Clitherow executed as a recusant?</p>
-                <ul class="answers">
-                    <li><input type="radio" name="q2" value="A"> A) 1584</li>
-                    <li><input type="radio" name="q2" value="B"> B) 1586</li>
-                    <li><input type="radio" name="q2" value="C"> C) 1588</li>
-                </ul>
-            </div>
-            <div class="question">
-                <p>3. What record speed did the Mallard achieve in 1938?</p>
-                <ul class="answers">
-                    <li><input type="radio" name="q3" value="A"> A) 124mph</li>
-                    <li><input type="radio" name="q3" value="B"> B) 126mph</li>
-                    <li><input type="radio" name="q3" value="C"> C) 128mph</li>
-                </ul>
-            </div>
-            <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
-        </form>
+        <div class="quiz-container">
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. What year did the York minster suffer a lightning bolt.?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q1" value="A"> A) 1986</li>
+                        <li><input type="radio" name="q1" value="B"> B) 1984</li>
+                        <li><input type="radio" name="q1" value="C"> C) 1982</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>2. Which year was Margaret Clitherow executed as a recusant?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q2" value="A"> A) 1584</li>
+                        <li><input type="radio" name="q2" value="B"> B) 1586</li>
+                        <li><input type="radio" name="q2" value="C"> C) 1588</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>3. What record speed did the Mallard achieve in 1938?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q3" value="A"> A) 124mph</li>
+                        <li><input type="radio" name="q3" value="B"> B) 126mph</li>
+                        <li><input type="radio" name="q3" value="C"> C) 128mph</li>
+                    </ul>
+                </div>
+                <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+            </form>
 
-        <div class="result" id="result">
-            <h2>Your Score: <span id="score"></span>/3</h2>
+            <div class="result" id="result">
+                <h2>Your Score: <span id="score"></span>/3</h2>
+            </div>
         </div>
-    </div>
     <!--quiz body-->
     <!--footer-->
     <footer class="bg-body-tertiary text-center">

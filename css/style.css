@@ -135,7 +135,7 @@ body {
 
 /* form.css */
 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -314,6 +314,7 @@ body {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* form.css */
 
 
 

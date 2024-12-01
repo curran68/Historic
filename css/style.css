@@ -40,7 +40,14 @@
 
 /* attractions */
 
+.c-item {
+    height: 820px;
+}
 
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
 
 /* attractions */
 

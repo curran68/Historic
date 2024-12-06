@@ -3,6 +3,10 @@
 ![alt text](/images/readme-logo.jpg "Hero Image")
 ### Created using HTML, CSS, JavaScript and Bootstrap 5.3.3
 
+* Live Site
+  https://curran68.github.io/Historic/quiz.html
+
+* Repository LInk
 https://github.com/curran68/Historic.git
 
 # Introduction

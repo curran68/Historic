@@ -207,15 +207,15 @@ Below i have inserted links to wireframes showcasing the layout.
 
 * Quiz
 
-![alt text](/wireframes/quiz.jpg "Wireframe")
+![alt text](/wireframes/Quiz.jpg "Wireframe")
 
 * Contact
 
-![alt text](/wireframes/contact.jpg "wireframe")
+![alt text](/wireframes/Contact.jpg "wireframe")
 
 * Attractions
 
-![alt text](/wireframes/attractions.jpg "hero sample")
+![alt text](/wireframes/Attractions.jpg "hero sample")
 
 
 ##
